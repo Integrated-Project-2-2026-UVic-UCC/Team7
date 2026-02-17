@@ -1,69 +1,73 @@
 # 🤖 Autonomous Connect 4 Machine
 
-Projecte acadèmic universitari per al disseny i desenvolupament d’una màquina física autònoma capaç de jugar a **4 en ratlla (Connect 4)** contra un jugador humà.
+University academic project focused on designing and developing a fully autonomous physical **Connect 4 (4 in a Row)** machine capable of playing against a human opponent.
 
-Aquest sistema combinarà:
+The system will combine:
 
-- Mecànica física
-- Control electrònic amb Raspberry Pi
-- Intel·ligència artificial (Minimax + Alpha-Beta)
-- Recuperació i classificació automàtica de peces
-- Preparació automàtica per a noves partides
-
----
-
-# 🎯 Objectiu del Projecte
-
-Construir una màquina autònoma capaç de:
-
-1. Detectar l’estat del tauler
-2. Calcular la millor jugada
-3. Executar físicament el moviment
-4. Recuperar les peces en acabar la partida
-5. Classificar-les mecànicament (sense sensors)
-6. Reiniciar-se automàticament
-
-El projecte es troba actualment en **fase conceptual inicial**.
+- Physical mechanical design  
+- Raspberry Pi control system  
+- Artificial Intelligence (Minimax + Alpha-Beta pruning)  
+- Automatic piece recovery and mechanical sorting  
+- Full autonomous game reset  
 
 ---
 
-# 🏗 Arquitectura General (Conceptual)
+# 🎯 Project Objective
 
-## Subsistemes Principals
+To build a fully autonomous machine capable of:
 
-### 1️⃣ Mecànica
-- Tauler vertical 7x6
-- Capçal mòbil en eix X
-- Sistema de drop de fitxa
-- Trapa inferior per buidatge
-- Sistema mecànic de classificació de peces (sense sensors)
-- Dipòsits verticals d’emmagatzematge
+1. Detecting the board state  
+2. Computing the optimal move  
+3. Physically executing the move  
+4. Recovering all pieces at the end of the match  
+5. Mechanically sorting the pieces (without sensors)  
+6. Automatically preparing for the next game  
 
-### 2️⃣ Electrònica
-- Raspberry Pi (model per definir)
-- Motor pas a pas per moviment lateral
-- Driver de motor
-- Servo per alliberar fitxa
-- Endstops per calibratge (homing)
-- Font d’alimentació separada per lògica i motors
+The project is currently in the **early conceptual stage**.
+
+---
+
+# 🏗 System Architecture (Conceptual)
+
+## Main Subsystems
+
+### 1️⃣ Mechanical System
+- Vertical 7x6 board  
+- X-axis moving head mechanism  
+- Piece drop system  
+- Bottom trap door for board clearing  
+- Fully mechanical piece sorting system (no sensors)  
+- Vertical storage reservoirs  
+
+### 2️⃣ Electronics
+- Raspberry Pi (model TBD)  
+- Stepper motor for lateral movement  
+- Motor driver  
+- Servo motor for piece release  
+- Endstops for homing  
+- Separate power supply for logic and motors  
 
 ### 3️⃣ Software
-- Motor d’intel·ligència artificial
-- Lògica de joc
-- Control de moviment
-- Sistema de detecció (pendent de definir)
+- AI engine  
+- Game logic  
+- Motion control  
+- Detection system (camera or mechanical detection – TBD)
 
 ---
 
-# 🧠 Algorisme d’Intel·ligència Artificial
+# 🧠 Artificial Intelligence
 
-S’utilitza:
+The AI uses:
 
-- Minimax
-- Poda Alpha-Beta
-- Heurística amb priorització de columna central
-- Bloqueig immediat de victòries rivals
+- Minimax algorithm  
+- Alpha-Beta pruning  
+- Heuristic evaluation  
+- Center-column prioritization  
+- Immediate win/block detection  
 
-Optimitzat per funcionar en Raspberry Pi.
+The algorithm is optimized to run efficiently on a Raspberry Pi.
 
 ---
+
+# 📁 Project Structure
+
