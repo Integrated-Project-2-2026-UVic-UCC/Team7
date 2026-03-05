@@ -1,1 +1,1 @@
-Circuit diagrams, wiring layouts and electronic system documentation.
+Source code for the robot control system, AI algorithm and hardware interface.
